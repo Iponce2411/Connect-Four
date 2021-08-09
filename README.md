@@ -12,6 +12,7 @@
 - HTML
 - CSS
 - JavaScript
+***
 **_Getting Started_**
 -Decide which game you want to plan out
 -Think about what you want the page to look like and which language will be needed to execute it
