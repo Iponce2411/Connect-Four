@@ -108,6 +108,7 @@ checkBoard = () => {
   }
 };
 
+
 for (let i = 0; i < squares.length; i++) {
   squares[i].onclick = () => {
     if (
@@ -129,3 +130,7 @@ for (let i = 0; i < squares.length; i++) {
     checkBoard();
   };
 }
+
+////doublecheck functions after board set up for draws/no clicks after win 
+
+///function for lightup, sounds
