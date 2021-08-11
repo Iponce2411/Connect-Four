@@ -1,0 +1,7 @@
+body 
+{
+  display: grid;
+  width: 306px;
+  margin: 10px auto;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+}
