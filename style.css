@@ -19,7 +19,7 @@ body {
   border-radius: 10px;
 }
 
-.cell {
+.square {
   font-family: sans-serif;
   width: 100px;
   height:100px;
