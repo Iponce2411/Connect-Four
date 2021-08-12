@@ -1,3 +1,4 @@
+////define variables
 const squares = document.querySelectorAll(".square");
 const result = document.querySelector("#result");
 const grid = document.querySelector(".grid");
@@ -79,69 +80,6 @@ const winningArrays = [
 
 ///board functions
 
-checkBoard = () => {
-  for (let y = 0; y < winningArrays.length; y++) {
-    const square1 = squares[winningArrays[y][0]];
-    const square2 = squares[winningArrays[y][1]];
-    const square3 = squares[winningArrays[y][2]];
-    const square4 = squares[winningArrays[y][3]];
-
-    if (
-      square1.classList.contains("player-one") &&
-      square2.classList.contains("player-one") &&
-      square3.classList.contains("player-one") &&
-      square4.classList.contains("player-one")
-    ) {
-      grid.innerHTML = "Player One Wins!";
-      displayCurrentPlayer.innerHTML = "";
-    }
-
-    if (
-      square1.classList.contains("player-two") &&
-      square2.classList.contains("player-two") &&
-      square3.classList.contains("player-two") &&
-      square4.classList.contains("player-two")
-    ) {
-      grid.innerHTML = "Player Two Wins!";
-      displayCurrentPlayer.innerHTML = "";
-    }
-  }
-};
-
-
-for (let i = 0; i < squares.length; i++) {
-  squares[i].onclick = () => {
-    if (
-      squares[i + 7].classList.contains("taken") &&
-      !squares[i].classList.contains("taken")
-    ) {
-      if (currentPlayer == 1) {
-        squares[i].classList.add("taken");
-        squares[i].classList.add("player-one");
-        currentPlayer = 2;
-        displayCurrentPlayer.innerHTML = `Next: Player ${currentPlayer}`;
-      } else if (currentPlayer == 2) {
-        squares[i].classList.add("taken");
-        squares[i].classList.add("player-two");
-        currentPlayer = 1;
-        displayCurrentPlayer.innerHTML = `Next: Player ${currentPlayer}`;
-      }
-    } else;
-    checkBoard();
-  };
-}
-
-$(document).ready(function() {
-  let color = 'black';
-  $('.column').click(function() {
-    $(this).prepend(`<div class="disc ${color}"></div>`);
-    if (color === 'red') {
-      color = 'black';
-    } else {
-      color = 'red';
-    }
-  });
-});
 
 ////doublecheck functions after board set up for draws/no clicks after win 
 

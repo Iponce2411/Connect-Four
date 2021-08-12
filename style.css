@@ -2,7 +2,9 @@
 h1{
   display: flex;
   justify-content: center;
-  /* color: white; */
+  font-style: script;
+  font-size: 50px;
+
 }
   
 body {
@@ -21,6 +23,15 @@ background-image: url(https://images.unsplash.com/photo-1557682233-43e671455dfa?
 
 }
 
+.player-one {
+  background-color: red;
+  border-radius: 10px;
+}
+
+.player-one {
+  background-color: yellow;
+  border-radius: 10px;
+}
 .squares {
   border: 5px solid black;
   background-color: white;
@@ -32,9 +43,11 @@ background-image: url(https://images.unsplash.com/photo-1557682233-43e671455dfa?
   
   border: none;
   border-radius: 10px;
-  width: 70px;
+  width: 100px;
   height: 30px;
   color: black;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
