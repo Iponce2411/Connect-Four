@@ -131,6 +131,18 @@ for (let i = 0; i < squares.length; i++) {
   };
 }
 
+$(document).ready(function() {
+  let color = 'black';
+  $('.column').click(function() {
+    $(this).prepend(`<div class="disc ${color}"></div>`);
+    if (color === 'red') {
+      color = 'black';
+    } else {
+      color = 'red';
+    }
+  });
+});
+
 ////doublecheck functions after board set up for draws/no clicks after win 
 
 ///function for lightup, sounds
